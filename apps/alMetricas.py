@@ -64,7 +64,7 @@ def algoritmo(self, matriz):
 			obj4=st.number_input("Rango superior 1: ", 0, value=10)
 			obj5=st.number_input("Rango inferior 2: ", 0, value=0)
 			obj6=st.number_input("Rango superior 2: ", 0, value=10)
-			DstEuclidiana = cdist(self.iloc[obj3:obj4], self.iloc[obj5:obj6], metric='euclidean')
+			DstEuclidiana = cdist(self.iloc[int(obj3):int(obj4)], self.iloc[int(obj5):int(obj6)], metric='euclidean')
 			MEuclidiana = st.dataframe(DstEuclidiana)
 		
 	elif matriz=='Chebyshev':
@@ -86,7 +86,7 @@ def algoritmo(self, matriz):
 			obj4=st.number_input("Rango superior 1: ", 0, value=10)
 			obj5=st.number_input("Rango inferior 2: ", 0, value=0)
 			obj6=st.number_input("Rango superior 2: ", 0, value=10)
-			DstChebyshev = cdist(self.iloc[obj3:obj4], self.iloc[obj5:obj6], metric='chebyshev')
+			DstChebyshev = cdist(self.iloc[int(obj3):int(obj4)], self.iloc[int(obj5):int(obj6)], metric='chebyshev')
 			MChebyshev = st.dataframe(DstChebyshev)
 
 	elif matriz=='Manhattan':
@@ -108,7 +108,7 @@ def algoritmo(self, matriz):
 			obj4=st.number_input("Rango superior 1: ", 0, value=10)
 			obj5=st.number_input("Rango inferior 2: ", 0, value=0)
 			obj6=st.number_input("Rango superior 2: ", 0, value=10)
-			DstManhattan = cdist(self.iloc[obj3:obj4], self.iloc[obj5:obj6], metric='cityblock')
+			DstManhattan = cdist(self.iloc[int(obj3):int(obj4)], self.iloc[int(obj5):int(obj6)], metric='cityblock')
 			MManhattan = st.dataframe(DstManhattan)
 
 	elif matriz=='Minkoswki':
@@ -130,5 +130,5 @@ def algoritmo(self, matriz):
 			obj4=st.number_input("Rango superior 1: ", 0, value=10)
 			obj5=st.number_input("Rango inferior 2: ", 0, value=0)
 			obj6=st.number_input("Rango superior 2: ", 0, value=10)
-			DstMinkowski = cdist(self.iloc[obj3:obj4], self.iloc[obj5:obj6], metric='minkowski')
+			DstMinkowski = cdist(self.iloc[int(obj3):int(obj4)], self.iloc[int(obj5):int(obj6)], metric='minkowski')
 			MMinkowski = st.dataframe(DstMinkowski)
