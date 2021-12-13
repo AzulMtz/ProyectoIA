@@ -1,0 +1,10 @@
+streamlit 
+pandas
+matplotlib
+apyori
+numpy
+scipy
+Seaborn
+Sklearn
+kneed
+mpl_toolkits
